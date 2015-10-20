@@ -35,8 +35,8 @@ object Common {
   private val buildVersion      =
     if (snapshot) s"$versionNumber-SNAPSHOT"
     else versionNumber
-  private val buildScalaVersion = "2.10.4"
-  private val buildSbtVersion   = "0.13.7"
+  private val buildScalaVersion = "2.10.5"
+  private val buildSbtVersion   = "0.13.8"
 
   // Global dependencies provided to all projects
   private val buildLibraryDependencies = Seq(
@@ -87,7 +87,7 @@ object Common {
     },
     hadoopVersion := {
       val hadoopEnvironmentVariable = "APACHE_HADOOP_VERSION"
-      val defaultHadoopVersion = "2.3.0"
+      val defaultHadoopVersion = "2.4.0"
 
       val _hadoopVersion = Properties.envOrNone(hadoopEnvironmentVariable)
 

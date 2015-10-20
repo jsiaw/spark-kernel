@@ -65,6 +65,7 @@ libraryDependencies ++= Seq(
 // HADOOP DEPENDENCIES
 //
 libraryDependencies ++= Seq(
+  "net.java.dev.jets3t" % "jets3t" % "0.9.0",
   "org.apache.hadoop" % "hadoop-client" % hadoopVersion.value excludeAll
     ExclusionRule(organization = "javax.servlet")
 )
